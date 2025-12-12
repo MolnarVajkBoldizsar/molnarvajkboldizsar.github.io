@@ -4,83 +4,98 @@
     <meta charset="UTF-8">
     <title>H5 - Objektum tervezés és Implementáció</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 10px; }
-        h2 { color: #555; margin-top: 30px; }
-        ul { margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
-        .download-link { font-weight: bold; color: #0056b3; text-decoration: none; }
-        .download-link:hover { text-decoration: underline; }
-        .note { font-style: italic; font-size: 0.9em; color: #666; background: #f9f9f9; padding: 10px; border-left: 3px solid #ccc; }
+        /* Ez a stílus igazodik a letisztult egyetemi beadandó oldalakhoz */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #000;
+        }
+        h1 {
+            font-size: 24px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 25px;
+            color: #333;
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        .placeholder {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
-    <h1>H5: Objektum tervezés és Implementáció</h1>
+    <h1>H5: Objektum tervezés, Implementáció és Tesztelés</h1>
 
-    <div class="intro">
-        <p>Ezen az oldalon találhatóak a projekt OMT objektum tervezési fázisának dokumentumai, a korai implementációs (skeleton) kódok, valamint a tesztelési tervek.</p>
-    </div>
+    <p>A H5 határidőre elkészített munkák részletezése:</p>
 
-    <section>
-        <h2>1. Objektum tervezés (OMT)</h2>
-        <p>Az alábbi dokumentumok részletezik a rendszer vezérlését, az osztályok közötti kapcsolatok implementációját és a moduláris felépítést.</p>
-        
-        <ul>
-            <li>
-                <strong>Rendszer vezérlésének kidolgozása:</strong> Aktív és passzív objektumok, vezérlő objektumok és üzenetváltások láthatósága.<br>
-                <a href="dokumentumok/vezerles_terv.pdf" class="download-link">[PDF letöltése]</a>
-            </li>
-            <li>
-                <strong>Implementációs módok és osztályok:</strong> Kapcsolatok leképzése és segédosztályok.<br>
-                <a href="dokumentumok/implementacios_terv.pdf" class="download-link">[PDF letöltése]</a>
-            </li>
-            <li>
-                <strong>Csomagdiagram (Modulok):</strong> Az elemek csomagokba szervezése.<br>
-                <a href="kepek/csomag_diagram.png" class="download-link">[Kép/PDF megtekintése]</a>
-            </li>
-        </ul>
-    </section>
+    <h2>1. OMT objektum tervezési fázis dokumentációja</h2>
+    <p>A rendszer részletes tervei, beleértve a vezérlést és az osztálykapcsolatokat.</p>
+    <ul>
+        <li>
+            <strong>Rendszer vezérlése és láthatóság:</strong> Aktív/passzív és vezérlő objektumok, üzenetváltások.<br>
+            <a href="#">[Dokumentáció letöltése - PDF]</a> <span class="placeholder">(Feltöltés alatt...)</span>
+        </li>
+        <li>
+            <strong>Implementációs módok és osztályok:</strong> Kapcsolatok leképzése és segédosztályok.<br>
+            <a href="#">[Dokumentáció letöltése - PDF]</a> <span class="placeholder">(Feltöltés alatt...)</span>
+        </li>
+        <li>
+            <strong>Csomagdiagram (Modulok):</strong> Az elemek csomagokba szervezése.<br>
+            <a href="#">[Kép megtekintése]</a> <span class="placeholder">(Feltöltés alatt...)</span>
+        </li>
+    </ul>
 
-    <hr>
+    <h2>2. Implementáció (Skeleton)</h2>
+    <p>A rendszer prototípus jellegű kezdeti implementációja (Skeleton kód).</p>
+    <ul>
+        <li>
+            <strong>Forráskód:</strong><br>
+            <a href="#">[Forráskód letöltése - ZIP]</a> <span class="placeholder">(Feltöltés alatt...)</span>
+        </li>
+        <li>
+            <strong>Javadoc dokumentáció:</strong><br>
+            <a href="#">[Javadoc megtekintése]</a> <span class="placeholder">(Generálás alatt...)</span>
+        </li>
+    </ul>
 
-    <section>
-        <h2>2. Implementáció (Skeleton)</h2>
-        <p>A projekt prototípus jellegű, skeleton implementációja.</p>
-        
-        <ul>
-            <li>
-                <strong>Forráskód (GitHub Repository / Zip):</strong><br>
-                <a href="https://github.com/molnarvajkboldizsar/PROJEKT_NEVE" target="_blank" class="download-link">Megtekintés GitHub-on</a> vagy 
-                <a href="files/skeleton_v1.zip" class="download-link">[ZIP letöltése]</a>
-            </li>
-            <li>
-                <strong>Javadoc / Dokumentáció:</strong><br>
-                <a href="javadoc/index.html" target="_blank" class="download-link">[Dokumentáció megnyitása]</a>
-            </li>
-        </ul>
-    </section>
+    <h2>3. Tesztelési terv</h2>
+    <p>A tesztelési stratégia és a legfontosabb tesztesetek leírása.</p>
+    <ul>
+        <li>
+            <strong>Tesztelési dokumentáció:</strong> Nagyvonalú tesztelési terv, tesztesetek, tesztelhető elemek.<br>
+            <a href="#">[Tesztelési terv letöltése - PDF]</a> <span class="placeholder">(Feltöltés alatt...)</span>
+        </li>
+    </ul>
 
-    <hr>
-
-    <section>
-        <h2>3. Tesztelési terv</h2>
-        <p>A rendszer nagyvonalú tesztelési terve és a legfontosabb tesztesetek.</p>
-        
-        <ul>
-            <li>
-                <strong>Tesztelési dokumentáció:</strong><br>
-                <a href="dokumentumok/tesztelesi_terv.pdf" class="download-link">[PDF letöltése]</a>
-            </li>
-        </ul>
-    </section>
-
-    <div class="note">
-        <p>Megjegyzés: A dokumentációk formátuma és a forráskód mennyisége a gyakorlatvezetővel történt egyeztetés alapján került kialakításra.</p>
-    </div>
-
-    <br>
-    <a href="index.html">← Vissza a főoldalra</a>
+    <a href="index.html" class="back-link">← Vissza a főoldalra</a>
 
 </body>
 </html>
