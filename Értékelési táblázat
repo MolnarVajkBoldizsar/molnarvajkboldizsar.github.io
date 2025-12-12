@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eredmények</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse; /* Összevonja a cellák kereteit */
+            width: 100%;
+            max-width: 600px; /* Hogy ne legyen túl széles */
+            border: 3px double #333; /* A külső dupla keret */
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333; /* Belső vékony keret */
+            padding: 10px;
+            font-size: 18px;
+        }
+        th {
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        /* A második oszlop (százalékok) formázása */
+        th:nth-child(2), td:nth-child(2) {
+            text-align: center;
+            font-weight: bold;
+            width: 200px;
+        }
+        .nev-oszlop {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Összesített Eredmények</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Összidőszakra (?100%) [%]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nev-oszlop">Molnár Vajk Boldizsár</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td class="nev-oszlop">Molnár Márk Patrik</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td class="nev-oszlop">Balogh Lili Dorka</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td class="nev-oszlop">Kriston Zalán</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td class="nev-oszlop">Kádár Balázs</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a href="index.html">← Vissza a főoldalra</a>
+
+</body>
+</html>
